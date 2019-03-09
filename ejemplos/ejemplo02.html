@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 class="titulo">
+    Welcome to {{ title }}!
+  </h1>
+<div>
+<!--  <h3>{{Nombre}}</h3>-->
+</div>
+<button (click)="verCal()"> {{ mostrar_calificaciones ? 'ocultar calificaciones': 'mostrar calificaciones'}} </button>
+<ul *ngIf="mostrar_calificaciones">
+  <h2>calificaciones</h2>
+  <li *ngFor="let calificacion of calificaciones">
+  {{calificacion}} 
+</li>
+</ul>
+<form (submit)="agregar(cali)">
+	<label>
+		Agregar Calificacion
+		<input type="text" name="nombre"
+		#cali>
+	</label>
+</form>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+<select ng-options="animal.nombre for animal in animales" ng-model="animal">
+  <option>{{animal.nombre}}</option>
+  </select>

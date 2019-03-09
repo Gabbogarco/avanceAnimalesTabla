@@ -1,0 +1,32 @@
+{
+ "animales":[
+    {
+        "nombre":"Perro",
+        "comida":"Croquetas",
+        "raza":"pug",
+        "img":"https://nombresparaperros.pet/wp-content/uploads/2018/12/nombres-para-perros-pug-16x9.jpg",
+        "descripcion": "Es serio con una actitud tranquila, el Pug es robusto y fácil de cuidar, pero notablemente no les hace bien el calor, ni el clima húmedo y debe ser vigilado cuidadosamente para evitar un golpe de calor. "
+    },
+    {
+        "nombre":"Tigre",
+        "comida":"Carne",
+        "raza":"Bengala",
+        "img":"https://cumbrepuebloscop20.org/wp-content/uploads/2018/08/tiger-1822535_640-1.jpg",
+        "descripcion": "El tigre de Bengala (panthera tigris tigris) es quizás uno de los animales más famosos y conocidos en la Tierra hoy en día"
+    },
+    {
+        "nombre":"Oso",
+        "comida":"Pescado",
+        "raza":"Polar",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/0/09/Polar_Bear_-_Alaska.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non metus enim. Vivamus viverra enim in eleifend imperdiet. Etiam ultricies mauris condimentum feugiat pharetra. Sed iaculis neque ante, sed aliquam turpis aliquam quis. Ut ut aliquet massa. Phasellus non fermentum felis, id tempus quam. Donec nisl leo, tristique et finibus tempus, viverra ut mi. Pellentesque ornare et nisi sit amet blandit. In consequat mattis dictum. Aliquam sed tincidunt est, eu consectetur justo. Fusce ultricies ac risus quis consequat. Phasellus imperdiet, neque dapibus vestibulum ornare, elit ligula tristique elit, sit amet placerat sem odio nec tellus."
+    },
+    {
+        "nombre":"Tiburon",
+        "comida":"Pescado",
+        "raza":"Blanco",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKD2SSM1V2a8TEDuRu0hI_jhc_7DZoFzSzPpDx5nPxvsq-l-Oq",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non metus enim. Vivamus viverra enim in eleifend imperdiet. Etiam ultricies mauris condimentum feugiat pharetra. Sed iaculis neque ante, sed aliquam turpis aliquam quis. Ut ut aliquet massa. Phasellus non fermentum felis, id tempus quam. Donec nisl leo, tristique et finibus tempus, viverra ut mi. Pellentesque ornare et nisi sit amet blandit. In consequat mattis dictum. Aliquam sed tincidunt est, eu consectetur justo. Fusce ultricies ac risus quis consequat. Phasellus imperdiet, neque dapibus vestibulum ornare, elit ligula tristique elit, sit amet placerat sem odio nec tellus."
+    }
+ ]
+}
