@@ -96,7 +96,7 @@
             ]
     }
  ],
-    "datosUniversidad":
+    "datosUniversidad":[
     {
         "nombre": "Universidad Estatal de Sonora",
         "direccion": "Rectoría: Blvd. Rosales #189 Col.Centro",
@@ -104,5 +104,5 @@
         "correo": "contacto@ues.mx",
         "materia": "Sistemas"
     }
- 
+ ]
 }

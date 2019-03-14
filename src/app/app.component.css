@@ -22,3 +22,19 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+#dgenerales{
+  font-family: arial, sans-serif;
+  font-size: 30px;
+}
+#tdetalle{
+  float:right;
+
+}
+
+.oculto{
+display: none;
+}
+.visible{
+  display: block;
+}

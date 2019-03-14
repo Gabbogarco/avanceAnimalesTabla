@@ -1,23 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<html data-ng-app>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
 <div style="text-align:center">
   <h1 class="titulo">
     Welcome to {{ title }}!
   </h1>
-<div>
-<!--  <h3>{{Nombre}}</h3>-->
-</div>
-<!--  <button (click)="ngOnInit()"> </button>-->
-
   <h2>calificaciones</h2>
-  <table>
-  <tr>
-<!--	  <td *ngFor="let animal of animales">{{animal.comida}}</td>-->
-  </tr>
-  
-  </table> 
-	
-
 	<div><h2>Animales</h2></div>
 
 <ul>
@@ -26,9 +20,6 @@
   	</li>
 </ul>
 
-<form >
- 
-</form>
 </div>
 
 <table id="tabla">
@@ -37,24 +28,47 @@
   <th>Direccion</th>
   <th>Colonia</th>
   <th>Carrera</th>
-  <tr *ngFor="let alumno of Oalumnos">
+  <tr *ngFor="let alumno of Oalumnos" >
   	<td>{{alumno.nombre}}</td>
   	<td>{{alumno.apellido}}</td>
   	<td>{{alumno.direccion}}</td>
   	<td>{{alumno.colonia}}</td>
-  	<td>{{alumno.carrera}}</td>
-  	<table>
+  	<td >{{alumno.carrera}}</td>
+
+  	<table id = "tdetalle" class="visible">
   			<th>Materia</th>
   			<th>Calificacion</th>
   			<tr *ngFor="let detalle of alumno.calificaciones">
 				<td>{{detalle.materia}}</td>
   				<td>{{detalle.calificacion}}</td>
   			</tr>
-	</table>
+	   </table>
   	</tr>
-</table>
+</table >
 
+<div  *ngFor = "let generales of ODatosUni" id = "dgenerales">
+	   Nombre: {{generales.nombre}}<br>
+	   Direccion: {{generales.direccion}}<br>
+	   Telefono: {{generales.telefono}}<br>
+	   Correo:{{generales.correo}}<br>
+	   Materia:{{generales.materia}}
+</div>
+<script>
+function mostrar() {
+	alert("Hola");
+	var elemento = document.getElementById("tdetalle");
+    if (elemento.className=="visible"){
+      			elemento.className = "oculto";
+  	}else{  elemento.className = "visible";
 
-
+		}
+}
+  document.addEventListener('readystatechange', function() {
+    if (document.readyState === "complete") {
+          mostrar();
+        }
+      });
+</script>
 <router-outlet></router-outlet>
+</body>
 </html>

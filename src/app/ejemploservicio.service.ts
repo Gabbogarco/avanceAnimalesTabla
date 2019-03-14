@@ -14,7 +14,11 @@ export class EjemploservicioService {
 
   getAlumnos(){
 //return this.http.get("http://demo0253989.mockable.io/alumnos");
-return this.http.get("http://localhost:3000/alumnos");
+    return this.http.get("http://localhost:3000/alumnos");
+  }
+  getDatosUniversidad(){
+//return this.http.get("http://demo0253989.mockable.io/alumnos");
+    return this.http.get("http://localhost:3000/DatosUniversidad");
   }
 }
  

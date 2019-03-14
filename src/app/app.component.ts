@@ -11,6 +11,7 @@ export class AppComponent {
 	mostrar_calificaciones : boolean;
   Oanimales:any;
   Oalumnos:any;
+  ODatosUni:any;
   title = 'Formulario';
   Nombre = "Gabriel.";
 
@@ -32,16 +33,21 @@ export class AppComponent {
         this.Oalumnos=data2;
         console.log(this.Oalumnos);
     });
- 
+      this.servicio_animales.getDatosUniversidad().subscribe(data3=>{
+        console.log(data3);
+        this.ODatosUni=data3;
+        console.log(this.ODatosUni);
+    });
+
   }
   verCal(){
-    this.mostrar_calificaciones=!this.mostrar_calificaciones;
-  	console.log("Se presiono el boton");
+      this.mostrar_calificaciones=!this.mostrar_calificaciones;
+  	   console.log("Se presiono el boton");
   }
   agregar(calificacion){
-    console.log(calificacion.value);
-    this.calificaciones.push(calificacion.value);
-    return false;
+      console.log(calificacion.value);
+      this.calificaciones.push(calificacion.value);
+      return false;
   }
 
 }
